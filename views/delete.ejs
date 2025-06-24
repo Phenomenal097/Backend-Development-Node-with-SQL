@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete user</title>
+</head>
+<body>
+    <h3>Enter user credentials for user deletion</h3>
+    <form action="/user/<%= id %>?_method=DELETE" method="post">
+        <textarea name="email" placeholder="Enter email"></textarea>
+        <input type="password" placeholder="Enter password" name="password" />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
